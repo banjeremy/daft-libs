@@ -1,0 +1,26 @@
+jj-game {
+  .game {
+    line-height: 40px;
+
+    input {
+      height: 30px;
+      text-align: center;
+    }
+
+    span {
+      visibility: hidden;
+    }
+  }
+
+  &.reveal {
+    .game {
+      span {
+        visibility: visible;
+      }
+      input {
+        border: 1px solid transparent;
+        border-bottom: 1px solid green;
+      }
+    }
+  }
+}
