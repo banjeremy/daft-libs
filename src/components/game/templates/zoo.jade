@@ -1,3 +1,4 @@
+
 div.game
   h3 A Day at the Zoo
   span&nbsp; Today I went to the zoo. I saw a 
@@ -22,7 +23,7 @@ div.game
   jj-game-input(type='adjective') 
   span&nbsp; day at the zoo.
   
-  div
-    button(ng-click='reveal()') Reveal
-    button(ng-click='reset()') Start Over
+  div.buttons
+    div.reveal(ng-click='reveal()'): a(href='#'): i.fa.fa-check-circle.fa-4x
+    div.refresh(ng-click='reset()'): a(href='#'): i.fa.fa-refresh.fa-4x
     
